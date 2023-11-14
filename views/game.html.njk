@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greetings | Madlibs!</title>
+  </head>
+
+  <body>
+
+    <h1>Madlibs</h1>
+    <form action="/madlib">
+        <span>Choose from the following:</span>
+
+        <div class = "name">
+        <label>Your Name</label>
+        <input type = "text" name = "YourName"/>
+        </div>
+
+        <div class="color">
+        <label>Choose a color</label>
+        <select name="color">
+          <option>Please choose an option</option>
+          <option>Red</option>
+          <option>Blue</option>
+        <option>Green</option>
+        </select>
+        </div>
+
+        <div class = "noun">
+        <label>Choose a noun</label>
+        <select name="noun">
+          <option>Please choose an option</option>
+          <option>Paris</option>
+          <option>Dallas</option>
+          <option>Dog</option>
+        </select>
+        </div>
+
+        <div class="adj">
+        <input type="radio" name="adj" value="sweet" id="sweet"/>
+        <label class ="inline-label"></label>Sweet</label>
+        <input type="radio" name="adj" value="loud" id="loud"/>
+        <label class ="inline-label"></label>Loud</label>
+        <input type="radio" name="adj" value="sour" id="sour"/>
+        <label class ="inline-label"></label>Sour</label>
+        </div>
+
+        <button type="submit">Let's go!</button>
+</form>
+</body>
+</html>

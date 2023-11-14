@@ -55,3 +55,27 @@ app.get('/greet', (req, res) => {
     compliment: compliment
   });
 });
+
+app.get('/game', (req, res) => {
+const play = req.query.play; 
+if (play === "yes") {
+  res.render('game.html.njk');
+  } else {
+  res.render('goodbye.html.njk');
+  }
+}
+);
+
+app.get('/madlib', (req, res) => {
+const name = req.query.YourName
+const color = req.query.color
+const noun = req.query.noun
+const adj = req.query.adj
+res.render ('madlib.html.njk', {
+  YourName: name,
+  color: color,
+  noun: noun,
+  adj: adj
+})
+
+  });

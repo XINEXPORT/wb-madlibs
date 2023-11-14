@@ -5,12 +5,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Greetings | Madlibs!</title>
-    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
     <h1>Nice to meet you, {{ name }}.</h1>
     <p>You're very {{compliment}}. </p>
-  </body>
+
+<h2>Movie form</h2>
+<form action="/game">
+        <div>
+        <span>Play a Game?</span>
+
+        <input type="radio" name="play" value="yes" id="yes-input"/>
+        <label class ="inline-label"></label>Yes</label>
+
+        <input type="radio" name="play" value="no" id="no-input"/>
+        <label class ="inline-label"></label>No</label>
+
+        <button type="submit">Here we go!</button>
+</div>
+</form>
+</body>
 
 </html>
